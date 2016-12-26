@@ -6,6 +6,13 @@
 	src: url('../font/my.ttf');
 }
 
+
+
+
+
+
+
+
 html,
 body {
 	position: relative;
@@ -26,6 +33,7 @@ body {
 	height: 100%;
 
 }
+ 
 
 .swiper-slide {
 	text-align: center;
@@ -109,10 +117,11 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: #AAAAAA;
+	
 }
 
 .ListMy{
-	color: #AAAAAA;
 	font-family: "微软雅黑";
 	
 }
@@ -125,10 +134,9 @@ body {
 	width: 100%;
 	background: #ccc;
 	overflow: hidden;
+	margin-top: 16px;
 	height: 100%;
-	
 }
-
 #scroller {
 	position: absolute;
 	z-index: 1;
@@ -158,6 +166,8 @@ body {
 	margin: 0;
 	width: 100%;
 	text-align: left;
+	background: #CCCCCC;
+	
 }
 
 #scroller li {
@@ -167,7 +177,43 @@ body {
 	background-color: #fafafa;
 	font-size: 14px;
 	display: flex;
-	flex-direction: row;
+	line-height: 100%;
+}
+#scroller li img {
+	width: 80px;
+	height: 80px;
+	
+}
+.mainLogo{
+	width: 80px;
+	height: 80px;
+	flex: 1;
+	margin-top: 10px;
+	
+}
+.intro{
+	flex: 2;
+	line-height: 26px;
+	margin-top: 10px;
+	
+}
+
+
+
+.intro p{
+	margin: 0;
+	padding: 0;
+	
+}
+.introTitle{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #363636;
+}
+.introMain{
+	font-size: 14px;
+	color: #A4A4A4;
+	
 }
 
 .slideTitle {
@@ -239,4 +285,57 @@ body {
 	height: 40px;
 	display: inline-block;
 	font-size: 20px;
+}
+#footer .active{
+	
+	color: #6F7AB8;
+}
+.bgEnd{
+	width: 100%;
+	height: 1144px;
+	background: #6F7AB8;
+	
+	
+}
+
+
+.bgEnd p{
+	
+	color:white;
+	font-family: myfont;
+	font-size: 30px;
+	
+}
+.musicConte{
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	top: 71px;
+	right: 13px;
+	z-index: 9999;
+	
+
+	
+}
+#change {
+   
+ 	height: 40px;
+	width: 40px;
+ 
+}
+
+.anMuci{
+ animation: change 2s linear infinite;
+	
+}
+@keyframes change {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
